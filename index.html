@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+    <header>
+      <div>
+        <nav class="navbar">
+          <div class="max-width">
+            <div class="logo"><a href="https://apply.holbertonschool.com"><img src="img/holberton-logo.png" alt=""></a></div>
+            <ul class="menu">
+              <li><a href="#home" class="menu-btn">Home</a></li>
+              <li><a href="#about" class="menu-btn">About</a></li>
+              <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="profile" id="home">
+        <div class="profile_container">
+          <div class="profile_profileImg">
+            <img src="img/Photoouss1.png" alt="Oussema Turki">
+          </div>
+          <div>
+            <h1 class="profile_name">
+              <span class="profile_name_firstName">Oussema</span>
+              <span class="profile_name_lastName">Turki</span>
+            </h1><br><br>
+            <p class="profile_title">Student</p><br>
+            <p class="description profile_description">
+              Strong capacity for learning and adapting, with a background in medical technology and electrical
+              engineering.
+              Fluent in French and English and arabic, with
+              intermediate Turkish language skills.
+            </p><br>
+            <a class="downloadBtn" href="cv/oussematurki.pdf" download="cv/oussematurki.pdf">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="group-1" id="about">
+        <div class="skills">
+          <h3 class="title">Skills:</h3>
+          <ul class="skills_list description">
+            <li>Strong capacity for learning and adapting</li>
+            <li>Presentation skills</li>
+            <li>Negotiation techniques</li>
+            <li>Research capabilities</li>
+            <li>Problem-solving aptitude</li>
+            <li>Analytical thinking</li>
+            <li>Beginner programming knowledge(Python)</li>
+            <li>computer skills</li>
+          </ul>
+        </div>
+
+
+        <div class="edu">
+          <h3 class="title">Education:</h3>
+          <div class="edu_item">
+            <p class="item_preTitle">2022</p>
+            <h4 class="item_title">High School Diploma</h4>
+            <p class="item_subtitle">
+              ÖZEL AKSAM LISESI, Istanbul, Turkey
+            </p>
+          </div>
+          <div class="edu_item">
+            <p class="item_preTitle">University Studies (Incomplete)</p>
+            <h4 class="item_title">Bachelor in Electric and Electronics Engineering (English Program)</h4>
+            <p class="item_subtitle">
+              Medipol University, Istanbul, Turkey
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="group-2">
+        <div class="exp">
+          <h3 class="title">Work Experience:</h3>
+          <div class="exp_item">
+            <p class="item_preTitle">Since Childhood</p>
+            <h4 class="item_title">GE-X-RAY Medical, Tunisia</h4>
+            <p class="item_subtitle">Part-time job in Medical Technology</p>
+            <p class=" description">
+              Gained valuable experience and knowledge in medical technology with my father in his company.
+            </p>
+          </div>
+          <div class="exp_item">
+            <p class="item_preTitle">2018</p>
+            <h4 class="item_title">Turkish Education Group, Turkey</h4>
+            <p class="item_subtitle">Student Consultant</p>
+            <p class="description">
+              Worked in a student-oriented company, developing presentation skills, communication, and negotiation
+              techniques.
+            </p>
+          </div>
+          <div class="exp_item">
+          </div>
+        </div>
+
+        <div class="interest">
+          <h3 class="title">Hobbies:</h3><br>
+          <div class="description">
+            <li> Basketball</li><br>
+            <li>Bodybuilding</li>
+            <br>
+            <li>Gamming</li>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="group-3">
+        <div class="contact">
+          <h3 class="title">Contact:</h3>
+          <div class="contact_info">
+            <p class="description">
+              Route de Tunis km 5 à côté banque de Tunis sakiet ezzit 3021, sfax, Tunisia
+            </p>
+            <p class="description">
+              +216 29843949
+            </p>
+            <p class="description">
+              oussematurki0@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="social" id="contact">
+          <h3 class="title">Socials:</h3>
+          <div class="social_items">
+            <a href="https://www.instagram.com/oussema_turki/" target="_blank" class="social_item">
+              <i data-feather="instagram"></i>
+              <span>/Oussema_Turki</span></a>
+            <a href="https://www.facebook.com/oussema.turki00" target="_blank" class="social_item">
+              <i data-feather="facebook"></i>
+              <span>/Oussema Turki</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace()
+      document.addEventListener('DOMContentLoaded', function () {
+        var navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 20) {
+            navbar.classList.add('sticky');
+          } else {
+            navbar.classList.remove('sticky');
+          }
+        });
+      });
+    </script>
+</body>
+</html>
